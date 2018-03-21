@@ -1,0 +1,35 @@
+//strictMath: true;
+@w:#ffffff;
+@b:#000000;
+
+@mobile: ~"only screen and (min-width: 340px)"; @w600: ~"only screen and (min-width: 600px)"; @tablet2: ~"only screen and (min-width: 768px)"; @notebook: ~"only screen and (min-width: 1024px)"; @desktop:~"only screen and (min-width: 1170px)"; @desktop1170:~"only screen and (min-width: 1170px)"; @desktop1280:~"only screen and (min-width: 1280px)"; @desktop1366:~"only screen and (min-width: 1366px)"; @desktop1440:~"only screen and (min-width: 1440px)"; @desktop1920:~"only screen and (min-width: 1920px)";
+
+
+.trs(@property, @time , @type)
+{
+    -webkit-transition: @property @time @type;
+    -moz-transition: @property @time @type;
+    -o-transition: @property @time @type;
+    transition: @property @time @type;
+}
+.radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.shadow(@shadow) {
+-webkit-box-shadow: @shadow;
+-moz-box-shadow: @shadow;
+box-shadow: @shadow;
+}
+.shadow1(@shadow, @shadow1) {
+-webkit-box-shadow: @shadow, @shadow1;
+-moz-box-shadow: @shadow, @shadow1;
+box-shadow: @shadow, @shadow1;
+}
+.trf(@value){-webkit-transform: @value; -moz-transform: @value; -ms-transform: @value; -o-transform: @value; transform: @value;}
+
+.center {
+    text-align: center;
+}
